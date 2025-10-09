@@ -125,16 +125,7 @@ body {
     overflow: hidden;
 }
 
-.nav-link::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 140, 0, 0.1), transparent);
-    transition: left 0.5s ease;
-}
+/* reset old shimmer effect */
 
 .nav-link:hover::before {
     left: 100%;
@@ -142,26 +133,28 @@ body {
 
 .nav-link:hover {
     color: #ff8c00;
-    text-shadow: 0 0 15px rgba(255, 140, 0, 0.8);
-    background: rgba(255, 140, 0, 0.05);
-    transform: translateY(-2px);
+    text-shadow: 0 0 12px rgba(255, 140, 0, 0.6);
 }
 
 .nav-link::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 0;
     width: 0;
     height: 2px;
     background: linear-gradient(90deg, #ff8c00, #ffd700);
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
+    transition: width 220ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 1px;
 }
 
 .nav-link:hover::after {
-    width: 80%;
+    width: 100%;
+}
+
+/* keyboard focus */
+.nav-link:focus-visible::after {
+    width: 100%;
 }
 
 /* Hero Section */
