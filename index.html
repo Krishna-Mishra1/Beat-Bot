@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beat Bot - STEM Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Beat Bot</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="glow-text">Beat Bot</span>
+                </h1>
+                <p class="hero-subtitle">Revolutionary STEM Project</p>
+                <p class="hero-description">
+                    An innovative robotics project that combines music, technology, and engineering 
+                    to create an interactive beat-sensing robot that responds to rhythm and sound.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Learn More</button>
+                    <button class="btn-secondary">View Demo</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="robot-container">
+                    <div class="robot-body">
+                        <div class="robot-head"></div>
+                        <div class="robot-arms">
+                            <div class="arm left"></div>
+                            <div class="arm right"></div>
+                        </div>
+                        <div class="robot-torso"></div>
+                        <div class="beat-indicators">
+                            <div class="beat-bar"></div>
+                            <div class="beat-bar"></div>
+                            <div class="beat-bar"></div>
+                            <div class="beat-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎵</div>
+                    <h3>Beat Detection</h3>
+                    <p>Advanced audio processing algorithms that detect and analyze musical beats in real-time.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Robotic Movement</h3>
+                    <p>Precise servo motors and actuators that create synchronized dance movements to the beat.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>LED Visualization</h3>
+                    <p>Dynamic LED strips that light up in patterns matching the detected rhythm and tempo.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Control</h3>
+                    <p>Intuitive mobile app interface for controlling the robot and adjusting sensitivity settings.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Modular Design</h3>
+                    <p>Open-source hardware and software architecture allowing for easy customization and upgrades.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Educational</h3>
+                    <p>Perfect for learning robotics, programming, and audio signal processing concepts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Beat Bot</h2>
+                    <p class="about-description">
+                        Beat Bot is an innovative STEM project that bridges the gap between music and robotics. 
+                        Built using Arduino microcontrollers, advanced sensors, and custom software, this project 
+                        demonstrates the intersection of multiple STEM disciplines.
+                    </p>
+                    <div class="tech-stack">
+                        <h3>Technology Stack</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">Arduino</span>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">C++</span>
+                            <span class="tech-item">3D Printing</span>
+                            <span class="tech-item">Electronics</span>
+                            <span class="tech-item">Signal Processing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="circuit-diagram">
+                        <div class="circuit-line horizontal"></div>
+                        <div class="circuit-line vertical"></div>
+                        <div class="circuit-node"></div>
+                        <div class="circuit-component"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <p class="team-subtitle">Meet the brilliant minds behind Beat Bot</p>
+            
+            <div class="team-slider-container">
+                <div class="team-slider">
+                    <div class="team-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="member-avatar">
+                                    <img src="aadarsh.jpg" alt="Aadarsh" class="avatar-image">
+                                </div>
+                                <h3 class="member-name">Aadarsh</h3>
+                                <p class="member-role">Lead Coder</p>
+                                <div class="member-skills">
+                                    <span class="skill-tag">Programming</span>
+                                    <span class="skill-tag">Arduino</span>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="member-details">
+                                    <h3 class="member-name">Aadarsh</h3>
+                                    <p class="member-role">Lead Coder</p>
+                                    <p class="member-bio">
+                                        The mastermind behind Beat Bot's programming and code architecture. 
+                                        Responsible for developing the core algorithms that make the robot 
+                                        respond to music and dance with precision.
+                                    </p>
+                                    <div class="member-skills-detailed">
+                                        <h4>Expertise:</h4>
+                                        <div class="skills-list">
+                                            <span class="skill-item">Arduino Programming</span>
+                                            <span class="skill-item">C++ Development</span>
+                                            <span class="skill-item">Algorithm Design</span>
+                                            <span class="skill-item">Code Architecture</span>
+                                        </div>
+                                    </div>
+                                    <div class="member-contact">
+                                        <span class="contact-item">📧 aadarsh@beatbot.stem</span>
+                                        <span class="contact-item">💻 GitHub</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="member-avatar">
+                                    <img src="saranya.jpg" alt="Saranya" class="avatar-image">
+                                </div>
+                                <h3 class="member-name">Saranya</h3>
+                                <p class="member-role">Bot Builder</p>
+                                <div class="member-skills">
+                                    <span class="skill-tag">Assembly</span>
+                                    <span class="skill-tag">Electronics</span>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="member-details">
+                                    <h3 class="member-name">Saranya</h3>
+                                    <p class="member-role">Bot Builder</p>
+                                    <p class="member-bio">
+                                        Skilled in physical assembly and electronics integration. 
+                                        Responsible for putting together the mechanical components 
+                                        and ensuring all hardware works seamlessly together.
+                                    </p>
+                                    <div class="member-skills-detailed">
+                                        <h4>Expertise:</h4>
+                                        <div class="skills-list">
+                                            <span class="skill-item">Hardware Assembly</span>
+                                            <span class="skill-item">Electronics Integration</span>
+                                            <span class="skill-item">Component Testing</span>
+                                            <span class="skill-item">Mechanical Design</span>
+                                        </div>
+                                    </div>
+                                    <div class="member-contact">
+                                        <span class="contact-item">📧 saranya@beatbot.stem</span>
+                                        <span class="contact-item">🔧 Portfolio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="member-avatar">
+                                    <img src="saanvi.jpg" alt="Saanvi" class="avatar-image">
+                                </div>
+                                <h3 class="member-name">Saanvi</h3>
+                                <p class="member-role">Bot Builder</p>
+                                <div class="member-skills">
+                                    <span class="skill-tag">Assembly</span>
+                                    <span class="skill-tag">Testing</span>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="member-details">
+                                    <h3 class="member-name">Saanvi</h3>
+                                    <p class="member-role">Bot Builder</p>
+                                    <p class="member-bio">
+                                        Expert in bot assembly and quality testing. 
+                                        Ensures every component is perfectly integrated 
+                                        and the robot functions flawlessly before deployment.
+                                    </p>
+                                    <div class="member-skills-detailed">
+                                        <h4>Expertise:</h4>
+                                        <div class="skills-list">
+                                            <span class="skill-item">Quality Testing</span>
+                                            <span class="skill-item">Component Assembly</span>
+                                            <span class="skill-item">Troubleshooting</span>
+                                            <span class="skill-item">Performance Optimization</span>
+                                        </div>
+                                    </div>
+                                    <div class="member-contact">
+                                        <span class="contact-item">📧 saanvi@beatbot.stem</span>
+                                        <span class="contact-item">🔧 Portfolio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="member-avatar">
+                                    <img src="lakshit.jpg" alt="Lakshit" class="avatar-image">
+                                </div>
+                                <h3 class="member-name">Lakshit</h3>
+                                <p class="member-role">Bot Builder</p>
+                                <div class="member-skills">
+                                    <span class="skill-tag">Assembly</span>
+                                    <span class="skill-tag">Hardware</span>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="member-details">
+                                    <h3 class="member-name">Lakshit</h3>
+                                    <p class="member-role">Bot Builder</p>
+                                    <p class="member-bio">
+                                        Hardware specialist focused on the physical construction 
+                                        and mechanical aspects of Beat Bot. Ensures robust 
+                                        and reliable hardware integration for optimal performance.
+                                    </p>
+                                    <div class="member-skills-detailed">
+                                        <h4>Expertise:</h4>
+                                        <div class="skills-list">
+                                            <span class="skill-item">Hardware Integration</span>
+                                            <span class="skill-item">Mechanical Assembly</span>
+                                            <span class="skill-item">Component Selection</span>
+                                            <span class="skill-item">System Optimization</span>
+                                        </div>
+                                    </div>
+                                    <div class="member-contact">
+                                        <span class="contact-item">📧 lakshit@beatbot.stem</span>
+                                        <span class="contact-item">🔧 Portfolio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="member-avatar">
+                                    <img src="krishna.jpg" alt="Krishna" class="avatar-image">
+                                </div>
+                                <h3 class="member-name">Krishna</h3>
+                                <p class="member-role">Web Developer</p>
+                                <div class="member-skills">
+                                    <span class="skill-tag">Web Design</span>
+                                    <span class="skill-tag">Frontend</span>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="member-details">
+                                    <h3 class="member-name">Krishna</h3>
+                                    <p class="member-role">Web Developer</p>
+                                    <p class="member-bio">
+                                        The creative mind behind this stunning landing page! 
+                                        Responsible for designing and developing the website 
+                                        that showcases Beat Bot to the world with style and elegance.
+                                    </p>
+                                    <div class="member-skills-detailed">
+                                        <h4>Expertise:</h4>
+                                        <div class="skills-list">
+                                            <span class="skill-item">Web Development</span>
+                                            <span class="skill-item">UI/UX Design</span>
+                                            <span class="skill-item">Frontend Technologies</span>
+                                            <span class="skill-item">Responsive Design</span>
+                                        </div>
+                                    </div>
+                                    <div class="member-contact">
+                                        <span class="contact-item">📧 krishna@beatbot.stem</span>
+                                        <span class="contact-item">💻 Portfolio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Began Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">How it Began</h2>
+            <p class="timeline-subtitle">The 5-day journey that brought Beat Bot to life</p>
+            
+            <div class="timeline-container">
+                <div class="timeline-line">
+                    <div class="timeline-progress"></div>
+                </div>
+                
+                <div class="timeline-content">
+                    <!-- Day 1 -->
+                    <div class="timeline-item" data-day="1">
+                        <div class="timeline-marker">
+                            <div class="marker-circle">
+                                <span class="day-number">1</span>
+                            </div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <h3 class="timeline-title">The Spark of Inspiration</h3>
+                                <span class="timeline-date">Day 1 - Monday</span>
+                            </div>
+                            <div class="card-content">
+                                <p class="timeline-description">
+                                    It all started with a simple question: "What if a robot could dance to music?" 
+                                    The idea sparked during a late-night coding session when we realized the potential 
+                                    of combining robotics with audio processing.
+                                </p>
+                                <div class="timeline-tasks">
+                                    <h4>Tasks Completed:</h4>
+                                    <ul class="task-list">
+                                        <li>✅ Initial concept brainstorming session</li>
+                                        <li>✅ Research on existing music-reactive robots</li>
+                                        <li>✅ Team formation and role assignments</li>
+                                        <li>✅ Project scope definition</li>
+                                        <li>✅ Technology stack research</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 2 -->
+                    <div class="timeline-item" data-day="2">
+                        <div class="timeline-marker">
+                            <div class="marker-circle">
+                                <span class="day-number">2</span>
+                            </div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <h3 class="timeline-title">Design & Architecture</h3>
+                                <span class="timeline-date">Day 2 - Tuesday</span>
+                            </div>
+                            <div class="card-content">
+                                <p class="timeline-description">
+                                    With the concept solidified, we dove deep into the technical architecture. 
+                                    This was the day we designed the modular system that would allow Beat Bot 
+                                    to process audio in real-time and respond with precise movements.
+                                </p>
+                                <div class="timeline-tasks">
+                                    <h4>Tasks Completed:</h4>
+                                    <ul class="task-list">
+                                        <li>✅ System architecture design</li>
+                                        <li>✅ Hardware component selection</li>
+                                        <li>✅ Software framework planning</li>
+                                        <li>✅ 3D modeling and prototyping</li>
+                                        <li>✅ Audio processing algorithm research</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 3 -->
+                    <div class="timeline-item" data-day="3">
+                        <div class="timeline-marker">
+                            <div class="marker-circle">
+                                <span class="day-number">3</span>
+                            </div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <h3 class="timeline-title">Prototype Development</h3>
+                                <span class="timeline-date">Day 3 - Wednesday</span>
+                            </div>
+                            <div class="card-content">
+                                <p class="timeline-description">
+                                    The most intense day of development! We built the first working prototype, 
+                                    integrating Arduino microcontrollers with servo motors and audio sensors. 
+                                    The first successful beat detection was a moment of pure excitement.
+                                </p>
+                                <div class="timeline-tasks">
+                                    <h4>Tasks Completed:</h4>
+                                    <ul class="task-list">
+                                        <li>✅ Arduino programming and setup</li>
+                                        <li>✅ Servo motor integration</li>
+                                        <li>✅ Audio sensor calibration</li>
+                                        <li>✅ First prototype assembly</li>
+                                        <li>✅ Initial beat detection testing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 4 -->
+                    <div class="timeline-item" data-day="4">
+                        <div class="timeline-marker">
+                            <div class="marker-circle">
+                                <span class="day-number">4</span>
+                            </div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <h3 class="timeline-title">Software Integration</h3>
+                                <span class="timeline-date">Day 4 - Thursday</span>
+                            </div>
+                            <div class="card-content">
+                                <p class="timeline-description">
+                                    Software development took center stage as we built the mobile app interface 
+                                    and refined the audio processing algorithms. The robot started responding 
+                                    more accurately to different music genres and tempos.
+                                </p>
+                                <div class="timeline-tasks">
+                                    <h4>Tasks Completed:</h4>
+                                    <ul class="task-list">
+                                        <li>✅ Mobile app development</li>
+                                        <li>✅ Bluetooth communication setup</li>
+                                        <li>✅ Audio processing optimization</li>
+                                        <li>✅ User interface design</li>
+                                        <li>✅ Real-time performance tuning</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 5 -->
+                    <div class="timeline-item" data-day="5">
+                        <div class="timeline-marker">
+                            <div class="marker-circle">
+                                <span class="day-number">5</span>
+                            </div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <h3 class="timeline-title">Final Integration & Testing</h3>
+                                <span class="timeline-date">Day 5 - Friday</span>
+                            </div>
+                            <div class="card-content">
+                                <p class="timeline-description">
+                                    The final day brought everything together! We conducted extensive testing, 
+                                    fine-tuned the performance, and prepared Beat Bot for its first public demonstration. 
+                                    The project was complete and ready to inspire the next generation of STEM enthusiasts.
+                                </p>
+                                <div class="timeline-tasks">
+                                    <h4>Tasks Completed:</h4>
+                                    <ul class="task-list">
+                                        <li>✅ End-to-end system testing</li>
+                                        <li>✅ Performance optimization</li>
+                                        <li>✅ Documentation completion</li>
+                                        <li>✅ Demo preparation</li>
+                                        <li>✅ Project presentation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get Involved</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Join Our Community</h3>
+                    <p>Connect with fellow STEM enthusiasts and contribute to the Beat Bot project.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span class="contact-icon">📧</span>
+                            <span>contact@beatbot.stem</span>
+                        </div>
+                        <div class="contact-method">
+                            <span class="contact-icon">🐙</span>
+                            <span>github.com/beatbot-project</span>
+                        </div>
+                        <div class="contact-method">
+                            <span class="contact-icon">💬</span>
+                            <span>Discord Community</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Your Name" class="form-input">
+                        <input type="email" placeholder="Your Email" class="form-input">
+                        <textarea placeholder="Your Message" class="form-textarea"></textarea>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Beat Bot</h4>
+                    <p>Innovating STEM education through music and robotics.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beat Bot Project. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
