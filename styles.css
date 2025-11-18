@@ -548,11 +548,97 @@ body {
     align-items: center;
 }
 
+.about-content-centered {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-text-centered {
+    text-align: center;
+}
+
 .about-description {
     font-size: 1.1rem;
     color: #cccccc;
     margin-bottom: 30px;
     line-height: 1.8;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subsection-title {
+    font-family: 'Orbitron', monospace;
+    color: #ffd700;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subsection-title:first-of-type {
+    margin-top: 0;
+}
+
+.benefits-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.benefits-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.benefit-item {
+    background: rgba(20, 20, 20, 0.6);
+    border: 1px solid rgba(255, 140, 0, 0.3);
+    border-radius: 15px;
+    padding: 25px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefit-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 140, 0, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.benefit-item:hover::before {
+    left: 100%;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+    border-color: #ff8c00;
+    box-shadow: 0 15px 30px rgba(255, 140, 0, 0.2);
+    background: rgba(20, 20, 20, 0.8);
+}
+
+.benefit-item h4 {
+    font-family: 'Orbitron', monospace;
+    color: #ff8c00;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.benefit-item p {
+    color: #cccccc;
+    line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 .tech-stack h3 {
@@ -1283,6 +1369,109 @@ body {
     }
 }
 
+/* Components Section */
+.components {
+    padding: 100px 0;
+    background: linear-gradient(135deg, rgba(10, 10, 10, 1) 0%, rgba(20, 20, 20, 1) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.components::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 30% 50%, rgba(255, 140, 0, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 70% 50%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+    animation: componentsBackgroundPulse 6s ease-in-out infinite alternate;
+}
+
+@keyframes componentsBackgroundPulse {
+    0% { opacity: 0.3; }
+    100% { opacity: 0.7; }
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #cccccc;
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+    font-weight: 300;
+}
+
+.components-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.component-category {
+    background: rgba(20, 20, 20, 0.8);
+    border: 1px solid rgba(255, 140, 0, 0.3);
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.component-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 140, 0, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.component-category:hover::before {
+    left: 100%;
+}
+
+.component-category:hover {
+    transform: translateY(-15px) scale(1.02);
+    border-color: #ff8c00;
+    box-shadow: 0 25px 50px rgba(255, 140, 0, 0.3);
+    background: rgba(20, 20, 20, 0.9);
+}
+
+.component-icon {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    display: block;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    filter: drop-shadow(0 0 10px rgba(255, 140, 0, 0.3));
+}
+
+.component-category:hover .component-icon {
+    transform: scale(1.2) rotate(5deg);
+    filter: drop-shadow(0 0 20px rgba(255, 140, 0, 0.6));
+}
+
+.component-category h3 {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffd700;
+    font-weight: 700;
+}
+
+.component-category p {
+    color: #cccccc;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
 /* Contact Section */
 .contact {
     padding: 100px 0;
@@ -1423,6 +1612,19 @@ body {
     }
     
     .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-content-centered {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    .benefits-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .components-content {
         grid-template-columns: 1fr;
     }
     
